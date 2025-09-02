@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dimas Rizqi | Portfolio</title>
+    <!-- Panggil file CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">
+        <a href="#">Dimas Rizqi</a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#project">Project</a></li>
+        </ul>
+      </nav>
+      <label class="switch">
+        <input type="checkbox" id="themeToggle" />
+        <span class="slider">
+          <span class="moon">🌙</span>
+          <span class="sun">☀️</span>
+        </span>
+      </label>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <img src="images/kucing.jpeg" alt="Profile" class="profile-img" />
+      <h1>Hai, saya Dimas Rizqi Ibadurrahim</h1>
+      <p>Mobile Developer | Android Enthusiast</p>
+      <div class="btn-group">
+        <a href="https://github.com/dimasrizqii" target="_blank" class="btn"
+          >GitHub</a
+        >
+        <a href="https://www.linkedin.com/in/dimasrizqii/" target="_blank" class="btn"
+          >LinkedIn</a
+        >
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        Informatics fresh graduate from UPN “Veteran” Jawa Timur whom dedicated
+        in the field of technology information in Software Engineering with
+        certificate related to the field of Software Engineering by BNSP and
+        many other IT Bootcamp such as Alterra Academy and Binar Academy.
+        Currently interested in the field of Mobile Engineering and has skills
+        on it including Kotlin, Flutter, Firebase, Clean Code Architecture, and
+        Fetch API. I can adapt to the new environments and have a passion to
+        work as a team.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <span class="skill">Kotlin</span>
+        <span class="skill">Flutter</span>
+        <span class="skill">Figma</span>
+        <span class="skill">Firebase</span>
+        <span class="skill">Postman</span>
+        <span class="skill">Git & GitHub</span>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section experience">
+      <h2>Project Experience</h2>
+
+      <div class="exp-item">
+        <h3>The Movie Database <span>- Mobile App (Mini Project)</span></h3>
+        <p>
+          An application that can display list of movies and films based on
+          genre, rating, and details of the movies. Users can also save their
+          favourite movies to local storage. This application uses data from
+          TMDB API.
+        </p>
+        <p><strong>Stack:</strong> Flutter, SQLite, Postman, GitHub</p>
+      </div>
+
+      <div class="exp-item">
+        <h3>GuruGPT <span>- Mobile App (Project for Thesis)</span></h3>
+        <p>
+          GuruGPT is a chat application where users can ask for recommendations
+          from ChatGPT about what they should teach their students. It was made
+          for teachers and uses cloud storage to save chats with ChatGPT.
+        </p>
+        <p><strong>Stack:</strong> Kotlin, Firebase, API ChatGPT, GitHub</p>
+      </div>
+
+      <div class="exp-item">
+        <h3>TRAID Point <span>- Mobile App (Capstone Project)</span></h3>
+        <p>
+          TRAID Point is a redeem app where users can exchange loyalty points
+          for internet data. My task in this project was fetching REST API from
+          the backend and implementing clean code with MVVM architecture using
+          Provider.
+        </p>
+        <p><strong>Stack:</strong> Flutter, Firebase, Postman, GitHub</p>
+      </div>
+
+      <div class="exp-item">
+        <h3>C-13 Aeroplane <span>- Mobile App (Capstone Project)</span></h3>
+        <p>
+          C-13 Aeroplane is similar to booking apps, focusing on plane tickets.
+          My task was slicing designs from Figma, consuming REST API, and
+          implementing clean MVVM architecture.
+        </p>
+        <p><strong>Stack:</strong> Kotlin, Firebase, Postman, GitHub</p>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="project" class="section">
+      <h2>Projects</h2>
+      <div class="projects">
+        <!-- Card Project GitHub -->
+        <div class="p-card">
+          <img
+            src="https://opengraph.githubassets.com/1/dimasrizqii"
+            alt="GitHub Repository Preview"
+          />
+          <div class="p-info">
+            <h3>Repositori GitHub</h3>
+            <p>Kumpulan project dan kontribusi saya di GitHub.</p>
+            <a
+              href="https://github.com/dimasrizqii"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Kunjungi
+            </a>
+          </div>
+        </div>
+
+        <!-- Card LinkedIn -->
+        <div class="p-card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg"
+            alt="LinkedIn Logo"
+          />
+          <div class="p-info">
+            <h3>Profil LinkedIn</h3>
+            <p>Profil profesional dan pengalaman kerja saya di LinkedIn.</p>
+            <a
+              href="https://www.linkedin.com/in/dimasrizqii/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Lihat Profil
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2025 Dimas Rizqi Ibadurrahim. All rights reserved.</p>
+    </footer>
+
+    <!-- Panggil file JS -->
+    <script src="script.js"></script>
+  </body>
+</html>

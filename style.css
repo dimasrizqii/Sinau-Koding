@@ -1,0 +1,296 @@
+/* Default Theme (Dark) */
+:root {
+  --bg: #121212;
+  --text: #ffffff;
+  --primary: #1e90ff;
+  --secondary: #2a2a2a;
+}
+
+.light {
+  --bg: #fdfdfd;
+  --text: #222222;
+  --primary: #0077cc;
+  --secondary: #eaeaea;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: var(--secondary);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .logo a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.theme-toggle input {
+  display: none;
+}
+
+.theme-toggle label {
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+/* Toggle switch dengan ikon */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+/* Sembunyikan checkbox asli */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Track */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: background-color 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px;
+  font-size: 14px;
+}
+
+/* Bulatan */
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.4s;
+}
+
+/* Ikon */
+.slider span {
+  pointer-events: none;
+}
+
+.slider .moon {
+  color: #444;
+}
+
+.slider .sun {
+  color: #ffd43b;
+}
+
+/* Saat ON */
+input:checked + .slider {
+  background-color: var(--brand);
+}
+
+input:checked + .slider:before {
+  transform: translateX(30px);
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero .profile-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover; /* Supaya proporsional */
+  border: 3px solid var(--brand);
+}
+
+.hero h1 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  margin-bottom: 20px;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* Sections */
+.section {
+  padding: 60px 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+/* Skills */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill {
+  background: var(--secondary);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+/* Projects */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.p-card {
+  background: var(--secondary);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.p-card:hover {
+  transform: translateY(-5px);
+}
+
+.p-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.p-info {
+  padding: 15px;
+}
+
+.p-info h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+}
+
+.p-info p {
+  margin: 0 0 15px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.p-info a {
+  display: inline-block;
+  padding: 6px 14px;
+  background: var(--primary);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.p-info a:hover {
+  background: #005fa3; /* sedikit lebih gelap dari var(--primary) */
+}
+
+/* Experience */
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.exp-item {
+  background: var(--secondary);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.exp-item h3 {
+  margin: 0 0 5px;
+  font-size: 1.1rem;
+}
+
+.exp-item span {
+  font-size: 0.85rem;
+  color: var(--primary);
+}
+
+.exp-item p {
+  margin-top: 8px;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 25px;
+  background: var(--secondary);
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
